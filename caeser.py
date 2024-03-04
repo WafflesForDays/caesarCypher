@@ -2,11 +2,13 @@
 
 def keyShift(word, shift=3):
     list(word)
-    for _ in word:
-        word += shift
-    ''.join(word)
+    for i in word:
+        i = ord(i)
+        i += shift
+        i = chr(i)
+        
 
     return word
 
 
-keyShift("test")
+print(keyShift("test", 3))
