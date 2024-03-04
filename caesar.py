@@ -1,6 +1,12 @@
 #Ted Pavlov 348705732
 
-def keyShift(word, shift):
+"""Shifts every letter in string by a specfied value
+
+args: String: word to encrypt, Int/String: value to shift by (default 1)
+
+return: String: encryted word
+"""
+def keyShift(word, shift = 1):
     looping = True
     shifted = []
     list(word)
